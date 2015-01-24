@@ -806,4 +806,3 @@ def cache_get_top_asns(source = 'global', date = None, limit = 100,
         [p.smembers('{}|{}'.format(date, rank[0])) for rank in temp_rank]
         to_return['top_list'] = list(zip(temp_rank, p.execute()))
     return to_return
-a
